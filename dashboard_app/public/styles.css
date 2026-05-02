@@ -1,0 +1,211 @@
+/* ブラウザで設定されているスタイルのリセット・共通設定 */
+/* 消さないでください */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+form,
+input,
+textarea,
+select,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+/* スタイルのリセット終了 */
+
+/* サイドバーとメインコンテンツを包むための要素のスタイルを書いてください */
+.container{
+  display: flex;
+  min-height: 100vh;
+  padding :20px;
+}
+
+/* サイドバーに関連するスタイルを書いてください */
+.sidebar{
+  width:20%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  flex-shrink: 0;
+}
+.sidebar-header{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom:20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.menu-list li{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.logo{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.tab-item{
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  display:block;
+}
+
+.tab-item:hover{
+  color: cornflowerblue;
+  cursor: pointer;
+}
+/* メインコンテンツに関連するスタイルを書いてください */
+
+.main-content{
+  width:80%;
+  padding: 20px;
+  text-align: center;
+}
+.content-section{
+  width: 80%;
+  margin: 0 auto;
+  /* これを指定することにより、メインコンテンツが中央に配置されます。また、８０％にすることで各文字が無駄に横広がりになるのを防いでいる！！！ */
+}
+.main-header{
+  margin-bottom: 60px;
+  padding-bottom: 40px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ccc;
+}
+.logo1{
+  font-size: 30px;
+  margin-bottom: 20px;
+  background-color: cornflowerblue;
+  color:white;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+}
+.logoitem{
+  font-size: 1em;
+}
+.main-wrapper{
+  text-align:left;
+  line-height: 2rem;
+/* ↑これにより、行間が広がり、読みやすくなります＋main-wrapperのテキストが左揃えになります。 */
+}
+
+/* 単位変換セクションのスタイルを以下に記載してください */
+.hidden{
+  display: none;
+}
+.converter-form{
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.converter-form h2{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: cornflowerblue;
+}
+.converter-form label{
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.converter-form label{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(3, 20, 50);
+}
+.converter-input{
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(3, 20, 50);
+}
+.toFrom{
+  display: inlign-block;
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.toFrom-item{
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(3, 20, 50);
+}
+.converter-from{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(3, 20, 50);
+}
+.converter-to{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+  height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(3, 20, 50);
+}
+  .converter-result{
+    background-color: rgb(88, 188, 188);
+    width: fit-content;   /* 内容に合わせる */
+    margin: 0 auto;       /* 中央寄せ維持 */
+    min-width: 12rem;     /* 小さすぎ防止（任意） */
+    padding: 0 16px;      /* テキスト左右の余白 */
+    height: 10vh;
+    border-radius: 5px;
+    line-height: 10vh;
+    /* line-heightとheightを同じ10vhにすることで文字を行間の中央配置 */
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;  /* 改行させず横に伸ばす */
+  }
+}
+
+.flashcards-list{
+  display: flex;
+  width: 20vh;
+}
+
+

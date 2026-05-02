@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <a href="#" class="tab-item" data-tab="home"
+            ><span class="logo ri-home-line"></span>Home</a
+          >
+        </div>
+        <div class="sidebar-menu">
+          <nav class="menu-nav">
+            <ul class="menu-list">
+              <li class="sidebar-menu-item tab-item" data-tab="converter">
+                <span class="logo ri-scales-3-line"></span>Unit Converter
+              </li>
+              <li class="sidebar-menu-item tab-item" data-tab="flashcards">
+                <span class="logo ri-book-line"></span>Flashcards
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </aside>
+      <main class="main-content">
+        <section id="home" class="content-section">
+          <header class="main-header">
+            <div class="logo1">
+              <span class="logoitem ri-dashboard-line"></span>
+            </div>
+            <h1>Welcome to Your Personal Dashboard</h1>
+            <p>
+              Make your daily life more convenient and enjoyable with our
+              personalized dashboard.
+            </p>
+          </header>
+
+          <div class="main-wrapper">
+            <p>
+              This dashboard is a tool to enrich your daily life. You can easily
+              use essential features such as diary entries, memo management, and
+              checking weather information.
+            </p>
+            <p>
+              Small daily records become irreplaceable memories, and efficient
+              task management leads to fulfilling days. Please use this as a
+              partner that supports your everyday life.
+            </p>
+          </div>
+        </section>
+
+        <section id="converter" class="content-section hidden">
+          <header class="main-header">
+            <div class="logo1">
+              <span class="logoitem ri-scales-3-line"></span>
+            </div>
+            <h1 class="section-title">Length Unit Conversion</h1>
+          </header>
+          <div class="section-body">
+            　　　　　　
+            <form class="converter-form">
+              <h2>Length Unit Conversion</h2>
+              <label for="inputValue">Value</label>
+              <input
+                type="number"
+                class="converter-input"
+                value="1000"
+                id="inputValue"
+              />
+              <div class="toFrom">
+                <div class="toFrom-item">
+                  <label for="converterFrom">From</label>
+                  <select id="converterFrom" class="converter-from"></select>
+                </div>
+                <div class="toFrom-item">
+                  <label for="converterTo">To</label>
+                  <select id="converterTo" class="converter-to"></select>
+                </div>
+              </div>
+              <div class="converter-result">
+
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <section id="flashcards" class="content-section hidden">
+          <header class="section-header">
+            <div class="logo1">
+              <span class="logoitem ri-file-text-line"></span>
+            </div>
+            <h1>Flashcards</h1>
+          </header>
+          <div class="section-body">
+            <div id="flashcards-list" class="flashcards-list">
+
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script type="module" src="main.js"></script>
+</html>
